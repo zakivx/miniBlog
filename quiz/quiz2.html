@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>لغز بوليسي</title>
+  <style>
+    :root{--bg:#f7f9fc;--card:#ffffff;--accent:#0b64a0}
+    body{font-family: "Segoe UI", Tahoma, Arial, "Noto Naskh Arabic", sans-serif; background:var(--bg); color:#111; margin:0; padding:2rem;}
+    .container{max-width:720px;margin:0 auto}
+    .card{background:var(--card);border-radius:12px;padding:1.5rem;box-shadow:0 6px 18px rgba(10,20,40,0.06)}
+    h1{margin:0 0 0.75rem 0;font-size:1.25rem;color:var(--accent)}
+    p{line-height:1.9;font-size:1.05rem}
+    .hint{background:#f0f8ff;border-radius:8px;padding:0.8rem;margin-top:0.75rem;border:1px solid #e0eef9}
+    .solution{margin-top:1rem;padding:0.9rem;border-radius:8px;background:#fff8e6;border:1px solid #fae7bf;display:none}
+    .btn{display:inline-block;margin-top:0.6rem;padding:0.45rem 0.75rem;border-radius:8px;border:none;background:var(--accent);color:white;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>لغز بوليسي قصير</h1>
+      <p>شخص عامي ولكن لديه <strong>اطلاع كبير</strong> على <strong>مرض وراثي معين</strong>.</p>
+      <div class="hint">
+        <button class="btn" onclick="document.getElementById('solution').style.display='block'">إظهار الحل</button>
+        <div class="solution" id="solution">الشخص إما مصاب بهذا المرض أو أحد من معارفه القريبين.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
